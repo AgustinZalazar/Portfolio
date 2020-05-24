@@ -1,0 +1,285 @@
+/* =================================== */
+/*  About Page Styles
+/* =================================== */
+.aboutpage-feedback-area {
+  background: #f9f9ff !important;
+}
+
+/*-------- Start Skillbar Style  -------------*/
+.single-skill p {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+.sb_progress {
+  height: 14px !important;
+  border-radius: 12px;
+  border: 3px solid #eee;
+}
+.sb_bar {
+  background: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  background: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+}
+.sb_bar {
+  height: 8px !important;
+  border-radius: 12px;
+}
+
+/*--------  End Skillbar Style  -------------*/
+.timeline ul li {
+  background: #f9f9ff;
+  position: relative;
+  margin: 0 auto;
+  width: 2px;
+  padding-bottom: 40px;
+  list-style-type: none;
+}
+
+.timeline ul li:last-child {
+  padding-bottom: 7px;
+}
+
+.timeline ul li:before {
+  content: '';
+  background: #8490ff;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border: 5px solid #eee;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.timeline ul li .hidden {
+  opacity: 0;
+}
+
+.timeline ul li .content {
+  background-color: white !important;
+  box-shadow: 0px 10px 27px 3px rgba(204, 204, 204, 0.2);
+  position: relative;
+  top: 7px;
+  width: 360px;
+  padding: 30px;
+}
+
+.timeline ul li .content h4 {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.timeline ul li .content p {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.timeline ul li .content p b {
+  color: #222;
+}
+
+.timeline ul li:nth-child(odd) .content {
+  left: 50px;
+}
+
+.timeline ul li:nth-child(odd) .content:before {
+  left: -38px;
+}
+
+.timeline ul li:nth-child(even) .content {
+  left: calc(-360px - 45px);
+}
+
+.timeline ul li:nth-child(even) .content:before {
+  right: -38px;
+}
+
+/* -------------------------
+   ----- Media Queries -----
+   ------------------------- */
+@media screen and (max-width: 1020px) {
+  .timeline ul li .content {
+    width: 41vw;
+  }
+  .timeline ul li:nth-child(even) .content {
+    left: calc(-41vw - 45px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li .content {
+    width: calc(100vw - 100px);
+  }
+  .timeline ul li .content h2 {
+    text-align: initial;
+  }
+  .timeline ul li:nth-child(even) .content {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) .content:before {
+    left: -33px;
+  }
+}
+
+/* =================================== */
+/*  Pricing Page Styles
+/* =================================== */
+.accordion > dt {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.accordion > dt > a {
+  display: block;
+  position: relative;
+  color: #222222;
+  text-decoration: none;
+  padding: 8px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  background: #fafcff;
+}
+
+@media (max-width: 414px) {
+  .accordion > dt > a {
+    font-size: 12px;
+  }
+}
+
+.accordion > dt > a:hover {
+  text-decoration: none;
+}
+
+.accordion > dt > a.active {
+  color: #8490ff;
+  border-color: #ddd;
+  cursor: default;
+  border-bottom: 1px solid #8490ff;
+  background: transparent;
+}
+
+.accordion > dt > a:after {
+  content: "\f107";
+  width: 15px;
+  height: 15px;
+  margin-top: -8px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  font-family: 'FontAwesome';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: center;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+}
+
+.accordion > dt > a.active:after,
+.accordion > dt > a.active:hover:after {
+  content: "\f106";
+  color: #8490ff;
+}
+
+.accordion > dt > a:hover:after {
+  color: #444;
+}
+
+.accordion > dd {
+  margin-bottom: 10px;
+  padding: 10px 20px 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #777;
+}
+
+.accordion > dt > a,
+.accordion > dt > a:after,
+.toggle > dt > a,
+.toggle > dt > a:after {
+  -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  -ms-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+}
+
+dl.accordion.time-line {
+  position: relative;
+}
+
+dl.accordion.time-line:before {
+  border-left: 1px dashed #cecece;
+  bottom: 10px;
+  content: "";
+  left: 15px;
+  position: absolute;
+  top: 25px;
+  z-index: 0;
+}
+
+.accordion.time-line > dd {
+  margin-bottom: 10px;
+  padding: 10px 20px 20px 40px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #777;
+}
+
+.accordion.time-line > dt > a:after {
+  content: "\e648";
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: -15px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: bold;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  background: #222;
+  padding-left: 3px;
+}
+
+.accordion.time-line > dt > a.active:after,
+.accordion.time-line > dt > a.active:hover:after {
+  content: "\e641";
+  color: #fff;
+}
+
+.accordion.time-line > dt > a {
+  display: block;
+  position: relative;
+  color: #222222;
+  text-decoration: none;
+  padding: 14px 20px 14px 40px;
+  border: none;
+  letter-spacing: 3px;
+}
+
+.accordion.time-line > dt > a:hover,
+.accordion.time-line > dt > a.active {
+  background: none !important;
+}
