@@ -865,7 +865,7 @@ header {
             transition-delay: 0.1s;
         }
 
-    .work:hover .work-content h3 {
+    .work:hover .work-content h3  {
         -webkit-transform: translateY(0%);
         -ms-transform: translateY(0%);
         transform: translateY(0%);
@@ -873,7 +873,26 @@ header {
         -webkit-transition-delay: 0.1s;
         transition-delay: 0.1s;
     }
-
+    .work .work-content p{
+        -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        transform: translateY(100%);
+        opacity: 0;
+        color: #FFF;
+        margin-bottom: 10px;
+        -webkit-transition: 0.2s all;
+        transition: 0.2s all;
+        -webkit-transition-delay: 0.1s;
+        transition-delay: 0.1s;
+    }
+    .work:hover .work-content p {
+        -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        opacity: 1;
+        -webkit-transition-delay: 0.1s;
+        transition-delay: 0.1s;
+    }
     .work .work-content span {
         display: block;
         text-transform: uppercase;
@@ -1570,7 +1589,38 @@ header {
         color: #DDA950;
         margin-bottom: 20px;
     }
-
+.cards-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.box{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f3f4f6;
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.5),
+                 15px 15px  15px rgba(0, 0, 0, 0.05);
+}
+.box img{
+    max-width: 120px;
+}
+.box p{
+    font-size: 14px;
+}
+.box h3{
+    margin: 10px;
+    color: #6d6d6d;
+}
 .contact-form {
     text-align: center;
     margin-top: 40px;
