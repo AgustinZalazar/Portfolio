@@ -108,7 +108,7 @@ a {
     display: flex;
     width: 45%;
     margin: 30px 0;
-    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.5),15px 15px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.5),15px 15px 15px rgba(0, 0, 0, 0.21);
 }
 
 .container-about .card-about .imgBx{
@@ -209,7 +209,9 @@ a {
 .white-text {
     color: #FFF;
 }
-
+.moztaza-text {
+    color: #DDA950;
+}
 ::-moz-selection {
     background-color: #6195FF;
     color: #FFF;
