@@ -92,6 +92,17 @@ a {
         opacity: 0.8;
         color: #DDA950;
     }
+/* Skills */
+.container_skills{
+    text-align: center;
+}
+.svg_skills img{
+    width: 64px;
+    height: 64px;
+    margin: 5px 25px;
+}
+/* end Skills */
+
 /* Cards about*/
 .container-about{
     position: relative;
