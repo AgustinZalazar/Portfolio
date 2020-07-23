@@ -42,7 +42,7 @@
 <body>
     <!-- Header -->
     <header id="home">
-        <div class="bg-img" style="background-image: url('./Images/background.jpg');">
+        <div class="bg-img slanted" style="background-image: url('./Images/background.jpg');">
             <div class="overlay"></div>
         </div>
 
@@ -73,74 +73,71 @@
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
                         <div class="home-content">
-                            <h1 class="moztaza-text"><span class="txt-rotate" data-period="2000" data-rotate='[ "Frontend Developer"]'></span></h1>
+                            <h1 class="moztaza-text">Frontend <span class="txt-rotate white-text" data-period="2000" data-rotate='[ "Developer"]'></span></h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <a href="#about" class="scroll-button smoothscroll">
+            <span class="fas fa-arrow-down"></span>
+        </a>
     </header>
     <!-- /Header -->
-
-    <!-- About -->
-    <div id="about" class="section md-padding">
+    <section class="featured-area section-about" id="about">
         <div class="container">
-            <div class="row">   
+            <div class="row">
                 <div class="section-header text-center">
                     <h2 class="title">Bienvenido a mi Web</h2>
                 </div>
-                <div class="container">
-                    <div class="container-about">
-                        <div class="card-about">
-                            <div class="imgBx" data-text="Diseño">
-                                <img src="./Images/pagina-de-destino.png"> 
-                            </div>
-                            <div class="content">
-                                <div>
-                                    <h3>Diseño</h3>
-                                    <p>Espectaculares diseños con grandes funcionalidades.</p>
-                                </div>
-                            </div>
+                <div class="col-md-6">
+                    <div class="single-feature">
+                        <div class="icon">
+                            <span class="fas fa-drafting-compass"></span>
                         </div>
-                        <div class="card-about">
-                            <div class="imgBx" data-text="Desarrollo">
-                                <img src="./Images/software.png" alt=""> 
-                            </div>
-                            <div class="content">
-                                <div>
-                                    <h3>Desarrollo</h3>
-                                    <p>Desarrollo de aplicaciones.</p>
-                                </div>
-                            </div>
+                        <div class="desc text-center">
+                            <h6 class="title text-uppercase">Design</h6>
+                            <p>Espectaculares diseños con grandes funcionalidades.</p>
                         </div>
-                        <div class="card-about">
-                            <div class="imgBx" data-text="Responsive">
-                              <img src="./Images/computadora.png">
-                            </div>
-                            <div class="content">
-                                <div>
-                                    <h3>Responsive</h3>
-                                    <p>Desarrollo tu web para todos los dispositivos disponibles.</p>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="single-feature">
+                        <div class="icon">
+                            <span class="fas fa-laptop-code"></span>
                         </div>
-                        <div class="card-about">
-                            <div class="imgBx" data-text="Soporte">
-                                <img src="./Images/soporte-tecnico.png" alt="">
-                            </div>
-                            <div class="content">
-                                <div>
-                                    <h3>Soporte Tecnico</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                </div>
-                            </div>
+                        <div class="desc text-center">
+                            <h6 class="title text-uppercase">Development</h6>
+                            <p>Desarrollo de aplicaciones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="single-feature">
+                        <div class="icon">
+                            <span class="fas fa-mobile-alt"></span>
+                        </div>
+                        <div class="desc text-center">
+                            <h6 class="title text-uppercase">Responsive</h6>
+                            <p>Desarrollo tu web para todos los dispositivos disponibles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="single-feature">
+                        <div class="icon">
+                            <span class="fas fa-headset"></span>
+                        </div>
+                        <div class="desc text-center">
+                            <h6 class="title text-uppercase">Technical Support</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /About -->
+    </section>
     <!-- Portfolio -->
     <div class="section md-padding bg-grey">
         <div class="container">
@@ -319,6 +316,10 @@
     </div>
     <!-- jQuery Plugins -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
     <script type="text/javascript" src="JS/counter.js"></script>
     <script type="text/javascript" src="JS/jquery.min.js"></script>
     <script type="text/javascript" src="JS/bootstrap.min.js"></script>

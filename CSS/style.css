@@ -102,7 +102,44 @@ a {
     margin: 5px 25px;
 }
 /* end Skills */
-
+.slanted:after {
+    content: "";
+    background: #fff;
+    height: 200px;
+    -webkit-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    right: 0;
+    z-index: 1; 
+    }
+    .scroll-button {
+        position: absolute;
+        z-index: 5;
+        bottom: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #DDA950;
+        left: 50%;
+        -webkit-transform: translate(-50%, -150%);
+        -ms-transform: translate(-50%, -150%);
+        transform: translate(-50%, -150%);
+        -webkit-box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.3); 
+    }
+    .scroll-button > span {
+        position: absolute;
+        font-size: 2rem;
+        color: white;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); 
+    }
 /* Cards about*/
 .container-about{
     position: relative;
@@ -735,7 +772,7 @@ header {
         position: absolute;
         left: 0px;
         right: 0px;
-        top: 50%;
+        top: 45%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
@@ -744,8 +781,11 @@ header {
 
 .home-content h1 {
     text-transform: uppercase;
+    font-weight: inherit;
 }
-
+.section-about{
+    padding-top: 75px !important;
+}
 .home-content button {
     margin-top: 20px;
 }
@@ -773,6 +813,101 @@ header {
 /*------------------------------------*\
 	About
 \*------------------------------------*/
+.featured-area {
+    background: #fff;
+    padding: 40px 0 80px 0;
+  }
+  
+  .single-feature {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .single-feature .icon {
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  
+  .single-feature .icon span {
+    position: relative;
+    z-index: 2;
+    font-size: 30px;
+    line-height: 60px;
+    /* color: #dda950; */
+  }
+  
+  .single-feature .icon:after {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    border-radius: 3px;
+  }
+  
+  .single-feature .desc h6 {
+    margin: 10px 0;
+    letter-spacing: 1px;
+  }
+  
+  /* .single-feature:hover .icon {
+    border: 1px solid transparent;
+  }
+  
+  .single-feature:hover .icon:after {
+    opacity: 1;
+  }
+  
+  .single-feature:hover .icon span {
+    background: -webkit-linear-gradient(-180deg, #fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  } */
+  
+  .single-generic-feature .icon {
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 3px;
+    border: 1px solid #eeeeee;
+    position: relative;
+  }
+  
+  .single-generic-feature .icon span {
+    position: relative;
+    z-index: 2;
+    font-size: 24px;
+  }
+  
+  .single-generic-feature .icon:after {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    border-radius: 3px;
+  }
+  
+  .single-generic-feature .desc {
+    width: 72%;
+  }
 
 .about {
     position: relative;
