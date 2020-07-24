@@ -31,16 +31,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Custom stlylesheet -->
     <link type="text/css" rel="stylesheet" href="CSS/style.css" />
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
 </head>
 
 <body>
-    <!-- Header -->
+
     <header id="home">
         <div class="bg-img slanted" style="background-image: url('./Images/background.jpg');">
             <div class="overlay"></div>
@@ -61,9 +56,9 @@
                 </div>
                 <ul class="main-nav nav navbar-nav navbar-right">
                     <li><a href="/Portfolio/">Home</a></li>
-                    <li><a href="AboutMe.html">Sobre mí</a></li>
-                    <li><a href="TrabajosFinalizados.html">Trabajos Finalizados</a></li>
-                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="AboutMe.html">About me</a></li>
+                    <li><a href="TrabajosFinalizados.html">Works Finished</a></li>
+                    <li><a href="Contacto.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -84,12 +79,12 @@
             <span class="fas fa-arrow-down"></span>
         </a>
     </header>
-    <!-- /Header -->
+
     <section class="featured-area section-about" id="about">
         <div class="container">
             <div class="row">
                 <div class="section-header text-center">
-                    <h2 class="title">Bienvenido a mi Web</h2>
+                    <h2 class="title" style="font-weight: inherit;">Welcome to my Web</h2>
                 </div>
                 <div class="col-md-6">
                     <div class="single-feature">
@@ -98,7 +93,7 @@
                         </div>
                         <div class="desc text-center">
                             <h6 class="title text-uppercase">Design</h6>
-                            <p>Espectaculares diseños con grandes funcionalidades.</p>
+                            <p>Spectacular designs with great features.</p>
                         </div>
                     </div>
                 </div>
@@ -120,7 +115,7 @@
                         </div>
                         <div class="desc text-center">
                             <h6 class="title text-uppercase">Responsive</h6>
-                            <p>Desarrollo tu web para todos los dispositivos disponibles.</p>
+                            <p>I develop your website for each available device.</p>
                         </div>
                     </div>
                 </div>
@@ -138,12 +133,16 @@
             </div>
         </div>
     </section>
-    <!-- Portfolio -->
+
+    <section>
+        <div class="parallax-one"><div class="overlay"></div></div>
+    </section>
+
     <div class="section md-padding bg-grey">
         <div class="container">
             <div class="row animated fadeInLeft delay-2s">
                 <div class="section-header text-center">
-                    <h2 class="title">Trabajos Finalizados</h2>
+                    <h2 class="title" style="font-weight: inherit;">Works Finished</h2>
                 </div>
                 <div class="col-md-4 col-xs-6 work">
                     <img class="img-responsive" src="./Images/CESYTFINAL.png" alt="">
@@ -189,128 +188,38 @@
                         </div>
                     </div>
                 </div>
-                <div style="text-align:center">
+                <div style="text-align:center; margin-top: 10px;">
                   <a href="TrabajosFinalizados.html" style="font-weight: bold;font-size: 20px;">Ver más</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- /Portfolio -->
 
 
-    <!--  opcional
-    <div id="numbers" class="section sm-padding">
-        <div class="bg-img" style="background-image: url('./Images/background2.jpg');">
-            <div class="overlay"></div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3 col-xs-6 counter">
-                    <div class="number">
-                        <i class="fa fa-users" style="color:white"></i>
-                        <h3 class="white-text timer count-title count-number" data-to="6" data-speed="1500"></h3>
-                        <span class="white-text">Clientes</span>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-xs-6 counter">
-                    <div class="number">
-                        <i class="fa fa-file" style="color:white"></i>
-                        <h3 class="white-text timer count-title count-number" data-to="6" data-speed="1500"></h3>
-                        <span class="white-text">Proyectos</span>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                    <div class="number">
-                        <i class="far fa-clock" style="color:white"></i>
-                        <h3 class="white-text timer count-title count-number" data-to="15000" data-speed="1000"></h3>
-                        <span class="white-text">Horas desarrolladas</span>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                    <div class="number">
-                        <i class="fa fa-coffee" style="color:white"></i>
-                        <h3 class="white-text timer count-title count-number" data-to="500" data-speed="1500"></h3>
-                        <span class="white-text">Tazas de Cafe</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="features" class="section md-padding bg-grey">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="section-header">
-                        <h2 class="title">¿Por qué elegirme?</h2>
-                    </div>
-                    <p>Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris. Ultrices sagittis orci a scelerisque purus.</p>
-                    <div class="feature">
-                        <i class="fa fa-check"></i>
-                        <p>Quis varius quam quisque id diam vel quam elementum.</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fa fa-check"></i>
-                        <p>Mauris augue neque gravida in fermentum.</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fa fa-check"></i>
-                        <p>Orci phasellus egestas tellus rutrum.</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fa fa-check"></i>
-                        <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div id="about-slider" class="owl-carousel owl-theme">
-                        <img class="img-responsive" src="./Images/whychoose1.jpg" alt="">
-                        <img class="img-responsive" src="./Images/whychoose2.jpg" alt="">
-                        <img class="img-responsive" src="./Images/whychoose3.jpg" alt="">
-                        <img class="img-responsive" src="./Images/whychoose4.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  opcional  -->
-
-    <!-- Footer -->
     <footer id="footer" class="sm-padding bg-dark">
-
-        <!-- Container -->
         <div class="container">
-            <!-- Row -->
             <div class="row">
                 <div class="col-md-12">
-                    <!-- footer logo -->
                     <div class="footer-logo" style="margin-bottom:0px">
                         <a href="Home.html"><img src="Images/Logo(Blanco).png" alt="logo"></a>
                     </div>
-                    <!-- /footer logo -->
-                    <!-- footer follow -->
+
                     <ul class="footer-follow">
                         <li><a href="mailto:agustinzalazar98@outlook.com?Subject=Consulta Web Personal" target="_blank"><i class="fa fa-envelope"></i></a></li>
                         <li><a href="https://www.instagram.com/agusnzalazar/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/agustin-zalazar-460982160/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
                         <li><a href="https://github.com/AgustinZalazar" target="_blank"><i class="fab fa-github"></i></a></li>
                     </ul>
-                    <!-- /footer follow -->
-                    <!-- footer copyright -->
                     <div class="footer-copyright">
                         <p>© 2020. Agustin Zalazar</p>
                     </div>
-                    <!-- /footer copyright -->
-
                 </div>
 
             </div>
-            <!-- /Row -->
-
         </div>
-        <!-- /Container -->
-
     </footer>
-    <!-- /Footer -->
+
+
     <div class="holder" id="preloader">
       <div class="preloader"><div></div><div></div></div>
     </div>

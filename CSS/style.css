@@ -861,20 +861,7 @@ header {
     margin: 10px 0;
     letter-spacing: 1px;
   }
-  
-  /* .single-feature:hover .icon {
-    border: 1px solid transparent;
-  }
-  
-  .single-feature:hover .icon:after {
-    opacity: 1;
-  }
-  
-  .single-feature:hover .icon span {
-    background: -webkit-linear-gradient(-180deg, #fff, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  } */
+ 
   
   .single-generic-feature .icon {
     text-align: center;
@@ -948,8 +935,40 @@ header {
     .about:hover h3 {
         color: #fff;
     }
+    .section-banner {
+        height: 400px;
+        margin: 0 auto;
+        background: #f9f9f9;
+    }
+    .overlay-banner {
+        position: absolute;
+        /* left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0; */
+        opacity: .8;
+        background: #1C1D21;
+    }
 
-
+    .parallax-one {
+        padding-top: 200px; 
+        padding-bottom: 200px; 
+        overflow: hidden; 
+        position: relative; 
+        width: 100%; 
+        background-image: url('../Images/img-banner2.jpg'); 
+        background-attachment: fixed; 
+        background-size: cover; 
+        -moz-background-size: cover; 
+        -webkit-background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: top center;
+    }
+    .parallax-one .overlay{
+        position: absolute;
+        opacity: .8;
+        background: #1C1D21;
+    }
 /*------------------------------------*\
 	Portfolio
 \*------------------------------------*/
