@@ -327,7 +327,7 @@ ul, ol {
         right: 0;
         bottom: 0;
         opacity: .8;
-        background: #1C1D21;
+        background: #080809;
     }
 
 
@@ -935,24 +935,10 @@ header {
     .about:hover h3 {
         color: #fff;
     }
-    .section-banner {
-        height: 400px;
-        margin: 0 auto;
-        background: #f9f9f9;
-    }
-    .overlay-banner {
-        position: absolute;
-        /* left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0; */
-        opacity: .8;
-        background: #1C1D21;
-    }
+    
 
     .parallax-one {
-        padding-top: 200px; 
-        padding-bottom: 200px; 
+        height: 400px;
         overflow: hidden; 
         position: relative; 
         width: 100%; 
@@ -964,10 +950,10 @@ header {
         background-repeat: no-repeat; 
         background-position: top center;
     }
-    .parallax-one .overlay{
-        position: absolute;
+    .parallax-one .overlay-2{
         opacity: .8;
         background: #1C1D21;
+        height: 400px;
     }
 /*------------------------------------*\
 	Portfolio
