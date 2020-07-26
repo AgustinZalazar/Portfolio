@@ -955,6 +955,14 @@ header {
         background: #1C1D21;
         height: 400px;
     }
+
+    .container-buttons{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 45%;
+        text-align: center;
+    }
 /*------------------------------------*\
 	Portfolio
 \*------------------------------------*/
