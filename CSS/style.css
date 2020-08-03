@@ -973,6 +973,27 @@ header {
   }
 
 }
+@media only screen and (max-width: 768px) {
+    .parallax-one {
+        height: 350px;
+    }
+
+    .parallax-one .overlay-2 {
+        height: 350px;
+    }
+
+    .container-buttons {
+        top: 37%;
+    }
+    .button-banner {
+        padding-bottom: 10px;
+        padding-top:10px ;
+    }
+
+    .svg_skills p{
+        text-align: center!important;
+    }
+}
 .work {
     position: relative;
     padding: 20px;
