@@ -9,8 +9,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        black_gray: "#121824",
-        black_darkgray: "#191F2B"
+        black_gray: "#101521",
+        black_darkgray: "#191F2B",
+        orange: "#cd643a"
       },
       animation: {
         reveal: 'reveal 0.8s forwards',
