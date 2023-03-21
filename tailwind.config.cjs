@@ -27,7 +27,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
+        secondary: ['PoppinsLight'],
+        secondary_bold: ['PoppinsBold'],
       },
     },
   },

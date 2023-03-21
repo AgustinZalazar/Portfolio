@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "PoppinsLight";
+    src: url('../fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: "PoppinsBold";
+    src: url('../fonts/Poppins-Bold.ttf');
+}
 
 .gradient-01 {
     background: rgb(205, 100, 58);

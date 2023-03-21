@@ -1,4 +1,5 @@
 import Header from "./components/header"
+import Technologies from "./components/technologies"
 import styles from "./styles/index.js"
 
 function App() {
@@ -8,10 +9,7 @@ function App() {
         <Header />
 
         <div className={` ${styles.snapStart} flex items-center justify-between`}>
-          <div>
-            <div className="overflow-hidden font-clash text-7xl font-medium"><div className="group-hover/wrap:translate-y-full group-hover:animate-reveal">Animate</div></div>
-            <div className="overflow-hidden font-clash text-7xl font-medium"><div className="group-hover/wrap:translate-y-full group-hover:animate-reveal group-hover:animation-delay-300">Anything</div></div>
-          </div>
+          <Technologies />
         </div>
 
         <div className="group flex h-screen w-full snap-start items-center justify-between">
