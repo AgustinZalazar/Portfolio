@@ -1,5 +1,5 @@
 const styles = {
-    snapStart: 'group h-screen w-full snap-start'
+    snapStart: 'h-screen w-full snap-start'
 }
 
 export default styles

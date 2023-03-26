@@ -1,4 +1,5 @@
 interface Props {
+    gradient: String,
     width: String,
     height: String,
     bottom?: String,
@@ -7,6 +8,6 @@ interface Props {
     right?: String,
 }
 
-export const GradientBall = ({ width, height, top, bottom, left, right }: Props) => {
-    return <div className={`absolute ${width} ${height}  ${top ? top : ''} ${bottom ? bottom : ''} ${left ? left : ''} ${right ? right : ''} rounded-full gradient-01`} />
+export const GradientBall = ({ gradient, width, height, top, bottom, left, right }: Props) => {
+    return <div className={`absolute ${width} ${height}  ${top ? top : ''} ${bottom ? bottom : ''} ${left ? left : ''} ${right ? right : ''} rounded-full ${gradient}`} />
 }

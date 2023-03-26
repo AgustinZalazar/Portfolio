@@ -11,7 +11,9 @@ module.exports = {
       colors: {
         black_gray: "#101521",
         black_darkgray: "#191F2B",
-        orange: "#cd643a"
+        orange: "#cd643a",
+        dark_orange: "#ce4d19",
+        light_orange: "#e57244"
       },
       animation: {
         reveal: 'reveal 0.8s forwards',

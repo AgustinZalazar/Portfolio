@@ -17,3 +17,15 @@
     background: linear-gradient(0deg, rgba(205, 100, 58, 1) 0%, rgba(205, 100, 58, 1) 50%, rgba(235, 73, 73, 1) 100%);
     filter: blur(125px);
 }
+
+.gradient-02 {
+    background: rgb(64, 75, 102);
+    background: linear-gradient(0deg, rgba(64, 75, 102, 1) 0%, rgba(85, 102, 145, 1) 50%, rgba(114, 136, 193, 1) 100%);
+    filter: blur(125px);
+}
+
+.gradient-03 {
+    background: rgb(2, 12, 41);
+    background: linear-gradient(0deg, rgba(2, 12, 41, 1) 0%, rgba(5, 23, 64, 1) 50%, rgba(2, 29, 92, 1) 100%);
+    filter: blur(125px);
+}

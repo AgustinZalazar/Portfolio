@@ -8,7 +8,7 @@ function App() {
       <div className="relative h-screen snap-y snap-mandatory overflow-y-auto scroll-smooth px-5 md:px-32 bg-black_gray">
         <Header />
 
-        <div className={` ${styles.snapStart} flex items-center justify-between`}>
+        <div className={` ${styles.snapStart} relative flex items-center justify-between`}>
           <Technologies />
         </div>
 
