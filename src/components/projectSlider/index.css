@@ -1,0 +1,35 @@
+.swiper_container {
+    height: 100%;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.swiper-slide {
+    width: 63rem;
+    height: 37.5rem;
+    position: relative;
+}
+
+@media (max-width: 980px) {
+    .swiper_container {
+        height: 50rem;
+    }
+
+    .swiper-slide {
+        width: 35rem !important;
+        height: 30rem !important;
+    }
+
+}
+
+@media (max-width: 680px) {
+    .swiper_container {
+        height: 40rem;
+    }
+
+    .swiper-slide {
+        width: 20rem !important;
+        height: 30rem !important;
+    }
+
+}

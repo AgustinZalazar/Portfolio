@@ -52,7 +52,7 @@ function Technologies() {
                     </Tooltip>
                 </div>
             }
-            <GradientBall gradient='gradient-02' width="w-32 md:w-96" height="h-24 md:h-36" bottom="bottom-0" right='-right-5 md:-right-12' />
+            <GradientBall gradient='gradient-02' width="w-32 md:w-96" height="h-24 md:h-36" bottom="bottom-0" right='right-0 md:-right-0' />
             <GradientBall gradient='gradient-03' width="w-24 md:w-64" height="h-20 md:h-24" bottom="bottom-0" right='right-32 md:right-80' />
         </div>
     )
