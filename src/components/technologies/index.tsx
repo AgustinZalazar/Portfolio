@@ -14,7 +14,7 @@ function Technologies() {
     const [technology, setTechnology] = useState<Boolean>(true)
     return (
         <div className='w-full text-center'>
-            <h1 className='font-secondary_bold mb-10 md:mb-12 text-white font-bold text-4xl md:text-6xl lg:text-8xl'>TECHNOLOGIES</h1>
+            <h2 className='font-secondary_bold mb-10 md:mb-12 text-white font-bold text-2xl md:text-4xl lg:text-7xl'>TECHNOLOGIES</h2>
             <button className='font-secondary text-xl bg-dark_orange rounded-2xl py-1 px-3 shadow-lg shadow-light_orange/50 text-white hover:bg-orange mr-4'
                 onClick={() => setTechnology(true)}
             >Frontend</button>
@@ -22,7 +22,7 @@ function Technologies() {
                 onClick={() => setTechnology(false)}
             >Backend</button>
             {technology ?
-                <div className='w-full h- grid grid-cols-2 md:grid-cols-4 gap-10 place-content-center place-items-center'>
+                <div className='w-full  grid grid-cols-2 lg:grid-cols-4 gap-10 place-content-center place-items-center'>
                     <Tooltip message="ReactJS & React Native" container_style="w-min p-5 rounded-full bg-black_darkgray cursor-pointer shadow-sm shadow-current" >
                         <React_svg />
                     </Tooltip>
@@ -37,7 +37,7 @@ function Technologies() {
                     </Tooltip>
                 </div>
                 :
-                <div className='w-full h- grid grid-cols-2 md:grid-cols-4 gap-10 place-content-center place-items-center'>
+                <div className='w-full  grid grid-cols-2 lg:grid-cols-4 gap-10 place-content-center place-items-center'>
                     <Tooltip message="NodeJS" container_style="w-min p-5 rounded-full bg-black_darkgray cursor-pointer shadow-sm shadow-current" >
                         <Nodejs_svg />
                     </Tooltip>
